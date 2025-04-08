@@ -28,9 +28,8 @@ const App = () => {
     setStack([...stack, ingredient])
   }
   const removeFromBurger = (index) => {
-    const itemIndex = stack.findIndex((_, i) => i === index); //remove
     const newStack = [...stack];
-    newStack.splice(itemIndex, 1);
+    newStack.splice(index, 1);
     setStack(newStack);
   }
 
